@@ -1,0 +1,12 @@
+apply from: '../libraries.gradle'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation libraries.kotlin.values()
+
+    api libraries.google.values()
+
+    testImplementation libraries.unitTests.values()
+    androidTestImplementation libraries.instrumentedTests.values()
+}

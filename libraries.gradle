@@ -1,0 +1,36 @@
+apply from: '../versions.gradle'
+
+ext.libraries = [
+
+        /* APP */
+
+        apollo: [
+                apolloRuntime:          "com.apollographql.apollo:apollo-runtime:$versions.apolloGraphQlVersion",
+                apolloAndroidSupport:   "com.apollographql.apollo:apollo-android-support:$versions.apolloGraphQlVersion"
+        ],
+
+        google: [
+                appCompat:              "androidx.appcompat:appcompat:$versions.appCompatVersion",
+                kotlinExtensions:       "androidx.core:core-ktx:$versions.kotlinExtensionsVersion"
+        ],
+
+        jetBrains: [
+                annotations:            "org.jetbrains:annotations:$versions.jetBrainsAnnotations"
+        ],
+
+        kotlin: [
+                core:                   "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$versions.kotlinVersion"
+        ],
+
+        /* TESTS */
+
+        instrumentedTests: [
+                espresso:               "androidx.test.espresso:espresso-core:$versions.espressoCoreVersion",
+                runner:                 "androidx.test:runner:$versions.androidTestRunnerVersion"
+        ],
+
+        unitTests: [
+                jUnit:                  "junit:junit:$versions.jUnitVersion"
+        ]
+
+]

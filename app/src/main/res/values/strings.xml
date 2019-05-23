@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GraphQLSample</string>
+    <string name="title_data">Data</string>
+    <string name="title_home">Home</string>
+</resources>
