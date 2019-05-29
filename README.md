@@ -1,4 +1,4 @@
-# Graphql Sample
+# GraphQL Sample
 
 This is a study regarding GraphQL using Apollo.
 
