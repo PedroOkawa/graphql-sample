@@ -22,9 +22,9 @@ class SearchViewModel @Inject constructor(
         private const val PAGE_SIZE = 10
     }
 
-    private val searchData = MutableLiveData<Data<List<RepositoryEntity>>>()
-    val search: LiveData<Data<List<RepositoryEntity>>>
-        get() = searchData
+    private val searchRepositoriesData = MutableLiveData<Data<List<RepositoryEntity>>>()
+    val searchRepositories: LiveData<Data<List<RepositoryEntity>>>
+        get() = searchRepositoriesData
 
     private var cursorAfter: String? = null
 
@@ -34,7 +34,7 @@ class SearchViewModel @Inject constructor(
             .observeOn(schedulerProvider.ui())
             .subscribeOn(schedulerProvider.io())
             .doOnSubscribe {
-                searchData.postValue(dataLoading())
+                searchRepositoriesData.postValue(dataLoading())
             }
             .subscribe(
                 ::onSearchSuccess,
@@ -45,11 +45,11 @@ class SearchViewModel @Inject constructor(
 
     private fun onSearchSuccess(searchEntity: SearchEntity) {
         cursorAfter = searchEntity.endCursor
-        searchData.postValue(dataSuccess(searchEntity.repositoryEntityList))
+        searchRepositoriesData.postValue(dataSuccess(searchEntity.repositoryEntityList))
     }
 
     private fun onSearchFailure(throwable: Throwable) {
-        searchData.postValue(dataError(throwable.localizedMessage))
+        searchRepositoriesData.postValue(dataError(throwable.localizedMessage))
     }
 
 }

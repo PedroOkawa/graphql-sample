@@ -10,7 +10,9 @@ abstract class BaseActivity : AppCompatActivity() {
     @get:LayoutRes
     protected abstract val layoutId: Int
 
-    protected abstract fun doOnCreated()
+    protected open fun doOnCreated() {
+        // To override
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

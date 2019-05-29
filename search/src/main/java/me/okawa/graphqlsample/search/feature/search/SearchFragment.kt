@@ -3,6 +3,7 @@ package me.okawa.graphqlsample.search.feature.search
 import android.util.Log
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import kotlinx.android.synthetic.main.fragment_search.*
 import me.okawa.domain.model.RepositoryEntity
 import me.okawa.graphqlsample.feature.common.BaseFragment
 import me.okawa.graphqlsample.model.Data
@@ -24,15 +25,22 @@ class SearchFragment : BaseFragment() {
     override fun doOnCreated() {
         inject()
         setupViewModel()
+        setupViews()
     }
 
     private fun setupViewModel() {
         viewModel = retrieveViewModel(viewModelFactory)
-        viewModel.search.observe(this, Observer(::onSearch))
-        viewModel.search("Pokemon")
+        viewModel.searchRepositories.observe(this, Observer(::onSearchRepositories))
     }
 
-    private fun onSearch(response: Data<List<RepositoryEntity>>?) {
+    private fun setupViews() {
+        button_search.setOnClickListener {
+            val query = edit_text_search_query.text.toString()
+            viewModel.search(query)
+        }
+    }
+
+    private fun onSearchRepositories(response: Data<List<RepositoryEntity>>?) {
         when(response?.dataState) {
             DataState.LOADING -> {}
             DataState.ERROR -> {}

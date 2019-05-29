@@ -296,7 +296,7 @@
               },
               {
                 "name": "viewerCanAdmin",
-                "description": "Select listings to which user has admin access. If omitted, listings visible to the\nviewer are returned.\n",
+                "description": "Select listings to which user has admin access. If omitted, listings visible to the\nviewer are returned.",
                 "type": {
                   "kind": "SCALAR",
                   "name": "Boolean",
@@ -326,7 +326,7 @@
               },
               {
                 "name": "allStates",
-                "description": "Select listings visible to the viewer even if they are not approved. If omitted or\nfalse, only approved listings will be returned.\n",
+                "description": "Select listings visible to the viewer even if they are not approved. If omitted or\nfalse, only approved listings will be returned.",
                 "type": {
                   "kind": "SCALAR",
                   "name": "Boolean",
@@ -1597,12 +1597,12 @@
           },
           {
             "kind": "OBJECT",
-            "name": "Bot",
+            "name": "Blob",
             "ofType": null
           },
           {
             "kind": "OBJECT",
-            "name": "Blob",
+            "name": "Bot",
             "ofType": null
           },
           {
@@ -2421,7 +2421,7 @@
           },
           {
             "name": "isDraft",
-            "description": "Whether this listing is still an editable draft that has not been submitted for review and is not publicly visible in the Marketplace.",
+            "description": "Whether this listing is still an editable draft that has not been submitted\nfor review and is not publicly visible in the Marketplace.",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -2784,7 +2784,7 @@
           },
           {
             "name": "supportUrl",
-            "description": "Either a URL or an email address for support for this listing's app, may return an empty string for listings that do not require a support URL.",
+            "description": "Either a URL or an email address for support for this listing's app, may\nreturn an empty string for listings that do not require a support URL.",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -2892,7 +2892,7 @@
           },
           {
             "name": "viewerCanEditCategories",
-            "description": "Can the current viewer edit the primary and secondary category of this\nMarketplace listing.\n",
+            "description": "Can the current viewer edit the primary and secondary category of this\nMarketplace listing.",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -2924,7 +2924,7 @@
           },
           {
             "name": "viewerCanRedraft",
-            "description": "Can the current viewer return this Marketplace listing to draft state\nso it becomes editable again.\n",
+            "description": "Can the current viewer return this Marketplace listing to draft state\nso it becomes editable again.",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -2940,7 +2940,7 @@
           },
           {
             "name": "viewerCanReject",
-            "description": "Can the current viewer reject this Marketplace listing by returning it to\nan editable draft state or rejecting it entirely.\n",
+            "description": "Can the current viewer reject this Marketplace listing by returning it to\nan editable draft state or rejecting it entirely.",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -2956,7 +2956,7 @@
           },
           {
             "name": "viewerCanRequestApproval",
-            "description": "Can the current viewer request this listing be reviewed for display in\nthe Marketplace as verified.\n",
+            "description": "Can the current viewer request this listing be reviewed for display in\nthe Marketplace as verified.",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -2972,7 +2972,7 @@
           },
           {
             "name": "viewerHasPurchased",
-            "description": "Indicates whether the current user has an active subscription to this Marketplace listing.\n",
+            "description": "Indicates whether the current user has an active subscription to this Marketplace listing.",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -2988,7 +2988,7 @@
           },
           {
             "name": "viewerHasPurchasedForAllOrganizations",
-            "description": "Indicates if the current user has purchased a subscription to this Marketplace listing\nfor all of the organizations the user owns.\n",
+            "description": "Indicates if the current user has purchased a subscription to this Marketplace listing\nfor all of the organizations the user owns.",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -3004,7 +3004,7 @@
           },
           {
             "name": "viewerIsListingAdmin",
-            "description": "Does the current viewer role allow them to administer this Marketplace listing.\n",
+            "description": "Does the current viewer role allow them to administer this Marketplace listing.",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -3673,7 +3673,7 @@
           },
           {
             "name": "itemShowcase",
-            "description": "Showcases a selection of repositories and gists that the profile owner has either curated or that have been selected automatically based on popularity.",
+            "description": "Showcases a selection of repositories and gists that the profile owner has\neither curated or that have been selected automatically based on popularity.",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -4144,7 +4144,7 @@
               },
               {
                 "name": "affiliations",
-                "description": "Array of viewer's affiliation options for repositories returned from the connection. For example, OWNER will include only repositories that the current viewer owns.",
+                "description": "Array of viewer's affiliation options for repositories returned from the\nconnection. For example, OWNER will include only repositories that the\ncurrent viewer owns.",
                 "type": {
                   "kind": "LIST",
                   "name": null,
@@ -4158,7 +4158,7 @@
               },
               {
                 "name": "ownerAffiliations",
-                "description": "Array of owner's affiliation options for repositories returned from the connection. For example, OWNER will include only repositories that the organization or user being viewed owns.",
+                "description": "Array of owner's affiliation options for repositories returned from the\nconnection. For example, OWNER will include only repositories that the\norganization or user being viewed owns.",
                 "type": {
                   "kind": "LIST",
                   "name": null,
@@ -4413,7 +4413,7 @@
               },
               {
                 "name": "affiliations",
-                "description": "Array of viewer's affiliation options for repositories returned from the connection. For example, OWNER will include only repositories that the current viewer owns.",
+                "description": "Array of viewer's affiliation options for repositories returned from the\nconnection. For example, OWNER will include only repositories that the\ncurrent viewer owns.",
                 "type": {
                   "kind": "LIST",
                   "name": null,
@@ -4427,7 +4427,7 @@
               },
               {
                 "name": "ownerAffiliations",
-                "description": "Array of owner's affiliation options for repositories returned from the connection. For example, OWNER will include only repositories that the organization or user being viewed owns.",
+                "description": "Array of owner's affiliation options for repositories returned from the\nconnection. For example, OWNER will include only repositories that the\norganization or user being viewed owns.",
                 "type": {
                   "kind": "LIST",
                   "name": null,
@@ -4541,7 +4541,7 @@
           },
           {
             "name": "requiresTwoFactorAuthentication",
-            "description": "When true the organization requires all members, billing managers, and outside collaborators to enable two-factor authentication.",
+            "description": "When true the organization requires all members, billing managers, and outside\ncollaborators to enable two-factor authentication.",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -6355,7 +6355,7 @@
         "fields": [
           {
             "name": "column",
-            "description": "The project column this card is associated under. A card may only belong to one\nproject column at a time. The column field will be null if the card is created\nin a pending state and has yet to be associated with a column. Once cards are\nassociated with a column, they will not become pending in the future.\n",
+            "description": "The project column this card is associated under. A card may only belong to one\nproject column at a time. The column field will be null if the card is created\nin a pending state and has yet to be associated with a column. Once cards are\nassociated with a column, they will not become pending in the future.",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -8108,7 +8108,7 @@
               },
               {
                 "name": "to",
-                "description": "Only contributions made before and up to and including this time will be counted. If omitted, defaults to the current time.",
+                "description": "Only contributions made before and up to and including this time will be\ncounted. If omitted, defaults to the current time.",
                 "type": {
                   "kind": "SCALAR",
                   "name": "DateTime",
@@ -8748,7 +8748,7 @@
           },
           {
             "name": "itemShowcase",
-            "description": "Showcases a selection of repositories and gists that the profile owner has either curated or that have been selected automatically based on popularity.",
+            "description": "Showcases a selection of repositories and gists that the profile owner has\neither curated or that have been selected automatically based on popularity.",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -9078,7 +9078,7 @@
               },
               {
                 "name": "affiliations",
-                "description": "Array of viewer's affiliation options for repositories returned from the connection. For example, OWNER will include only repositories that the current viewer owns.",
+                "description": "Array of viewer's affiliation options for repositories returned from the\nconnection. For example, OWNER will include only repositories that the\ncurrent viewer owns.",
                 "type": {
                   "kind": "LIST",
                   "name": null,
@@ -9092,7 +9092,7 @@
               },
               {
                 "name": "ownerAffiliations",
-                "description": "Array of owner's affiliation options for repositories returned from the connection. For example, OWNER will include only repositories that the organization or user being viewed owns.",
+                "description": "Array of owner's affiliation options for repositories returned from the\nconnection. For example, OWNER will include only repositories that the\norganization or user being viewed owns.",
                 "type": {
                   "kind": "LIST",
                   "name": null,
@@ -9527,7 +9527,7 @@
               },
               {
                 "name": "affiliations",
-                "description": "Array of viewer's affiliation options for repositories returned from the connection. For example, OWNER will include only repositories that the current viewer owns.",
+                "description": "Array of viewer's affiliation options for repositories returned from the\nconnection. For example, OWNER will include only repositories that the\ncurrent viewer owns.",
                 "type": {
                   "kind": "LIST",
                   "name": null,
@@ -9541,7 +9541,7 @@
               },
               {
                 "name": "ownerAffiliations",
-                "description": "Array of owner's affiliation options for repositories returned from the connection. For example, OWNER will include only repositories that the organization or user being viewed owns.",
+                "description": "Array of owner's affiliation options for repositories returned from the\nconnection. For example, OWNER will include only repositories that the\norganization or user being viewed owns.",
                 "type": {
                   "kind": "LIST",
                   "name": null,
@@ -9672,7 +9672,7 @@
               },
               {
                 "name": "contributionTypes",
-                "description": "If non-null, include only the specified types of contributions. The GitHub.com UI uses [COMMIT, ISSUE, PULL_REQUEST, REPOSITORY]",
+                "description": "If non-null, include only the specified types of contributions. The\nGitHub.com UI uses [COMMIT, ISSUE, PULL_REQUEST, REPOSITORY]",
                 "type": {
                   "kind": "LIST",
                   "name": null,
@@ -10005,7 +10005,7 @@
               },
               {
                 "name": "ownerAffiliations",
-                "description": "Array of owner's affiliation options for repositories returned from the connection. For example, OWNER will include only repositories that the organization or user being viewed owns.",
+                "description": "Array of owner's affiliation options for repositories returned from the\nconnection. For example, OWNER will include only repositories that the\norganization or user being viewed owns.",
                 "type": {
                   "kind": "LIST",
                   "name": null,
@@ -10229,7 +10229,7 @@
               },
               {
                 "name": "affiliations",
-                "description": "Array of viewer's affiliation options for repositories returned from the connection. For example, OWNER will include only repositories that the current viewer owns.",
+                "description": "Array of viewer's affiliation options for repositories returned from the\nconnection. For example, OWNER will include only repositories that the\ncurrent viewer owns.",
                 "type": {
                   "kind": "LIST",
                   "name": null,
@@ -10243,7 +10243,7 @@
               },
               {
                 "name": "ownerAffiliations",
-                "description": "Array of owner's affiliation options for repositories returned from the connection. For example, OWNER will include only repositories that the organization or user being viewed owns.",
+                "description": "Array of owner's affiliation options for repositories returned from the\nconnection. For example, OWNER will include only repositories that the\norganization or user being viewed owns.",
                 "type": {
                   "kind": "LIST",
                   "name": null,
@@ -10344,7 +10344,7 @@
               },
               {
                 "name": "affiliations",
-                "description": "Array of viewer's affiliation options for repositories returned from the connection. For example, OWNER will include only repositories that the current viewer owns.",
+                "description": "Array of viewer's affiliation options for repositories returned from the\nconnection. For example, OWNER will include only repositories that the\ncurrent viewer owns.",
                 "type": {
                   "kind": "LIST",
                   "name": null,
@@ -10358,7 +10358,7 @@
               },
               {
                 "name": "ownerAffiliations",
-                "description": "Array of owner's affiliation options for repositories returned from the connection. For example, OWNER will include only repositories that the organization or user being viewed owns.",
+                "description": "Array of owner's affiliation options for repositories returned from the\nconnection. For example, OWNER will include only repositories that the\norganization or user being viewed owns.",
                 "type": {
                   "kind": "LIST",
                   "name": null,
@@ -10667,7 +10667,7 @@
           },
           {
             "name": "ORGANIZATION_MEMBER",
-            "description": "Repositories that the user has access to through being a member of an organization. This includes every repository on every team that the user is on.",
+            "description": "Repositories that the user has access to through being a member of an\norganization. This includes every repository on every team that the user is on.",
             "isDeprecated": false,
             "deprecationReason": null
           }
@@ -11319,7 +11319,7 @@
               },
               {
                 "name": "affiliations",
-                "description": "Array of viewer's affiliation options for repositories returned from the connection. For example, OWNER will include only repositories that the current viewer owns.",
+                "description": "Array of viewer's affiliation options for repositories returned from the\nconnection. For example, OWNER will include only repositories that the\ncurrent viewer owns.",
                 "type": {
                   "kind": "LIST",
                   "name": null,
@@ -11333,7 +11333,7 @@
               },
               {
                 "name": "ownerAffiliations",
-                "description": "Array of owner's affiliation options for repositories returned from the connection. For example, OWNER will include only repositories that the organization or user being viewed owns.",
+                "description": "Array of owner's affiliation options for repositories returned from the\nconnection. For example, OWNER will include only repositories that the\norganization or user being viewed owns.",
                 "type": {
                   "kind": "LIST",
                   "name": null,
@@ -12560,7 +12560,7 @@
             "args": [
               {
                 "name": "qualifiedName",
-                "description": "The ref to retrieve. Fully qualified matches are checked in order (`refs/heads/master`) before falling back onto checks for short name matches (`master`).",
+                "description": "The ref to retrieve. Fully qualified matches are checked in order\n(`refs/heads/master`) before falling back onto checks for short name matches (`master`).",
                 "type": {
                   "kind": "NON_NULL",
                   "name": null,
@@ -16265,7 +16265,7 @@
           },
           {
             "name": "potentialMergeCommit",
-            "description": "The commit that GitHub automatically generated to test if this pull request could be merged. This field will not return a value if the pull request is merged, or if the test merge commit is still being generated. See the `mergeable` field for more details on the mergeability of the pull request.",
+            "description": "The commit that GitHub automatically generated to test if this pull request\ncould be merged. This field will not return a value if the pull request is\nmerged, or if the test merge commit is still being generated. See the\n`mergeable` field for more details on the mergeability of the pull request.",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -18535,7 +18535,7 @@
         "inputFields": [
           {
             "name": "assignee",
-            "description": "List issues assigned to given name. Pass in `null` for issues with no assigned user, and `*` for issues assigned to any user.",
+            "description": "List issues assigned to given name. Pass in `null` for issues with no assigned\nuser, and `*` for issues assigned to any user.",
             "type": {
               "kind": "SCALAR",
               "name": "String",
@@ -18583,7 +18583,7 @@
           },
           {
             "name": "milestone",
-            "description": "List issues by given milestone argument. If an string representation of an integer is passed, it should refer to a milestone by its number field. Pass in `null` for issues with no milestone, and `*` for issues that are assigned to any milestone.",
+            "description": "List issues by given milestone argument. If an string representation of an\ninteger is passed, it should refer to a milestone by its number field. Pass in\n`null` for issues with no milestone, and `*` for issues that are assigned to any milestone.",
             "type": {
               "kind": "SCALAR",
               "name": "String",
@@ -20049,7 +20049,7 @@
           },
           {
             "name": "pullRequest",
-            "description": "Returns the pull request associated with the comment, if this comment was made on a\npull request.\n",
+            "description": "Returns the pull request associated with the comment, if this comment was made on a\npull request.",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -21922,7 +21922,7 @@
         "fields": [
           {
             "name": "age",
-            "description": "Identifies the recency of the change, from 1 (new) to 10 (old). This is calculated as a 2-quantile and determines the length of distance between the median age of all the changes in the file and the recency of the current range's change.",
+            "description": "Identifies the recency of the change, from 1 (new) to 10 (old). This is\ncalculated as a 2-quantile and determines the length of distance between the\nmedian age of all the changes in the file and the recency of the current\nrange's change.",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -23546,7 +23546,7 @@
         "inputFields": [
           {
             "name": "id",
-            "description": "ID of a User to filter by. If non-null, only commits authored by this user will be returned. This field takes precedence over emails.",
+            "description": "ID of a User to filter by. If non-null, only commits authored by this user\nwill be returned. This field takes precedence over emails.",
             "type": {
               "kind": "SCALAR",
               "name": "ID",
@@ -23849,7 +23849,7 @@
           },
           {
             "name": "state",
-            "description": "The state of this signature. `VALID` if signature is valid and verified by GitHub, otherwise represents reason why signature is considered invalid.",
+            "description": "The state of this signature. `VALID` if signature is valid and verified by\nGitHub, otherwise represents reason why signature is considered invalid.",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -27734,7 +27734,7 @@
         "enumValues": [
           {
             "name": "ADMIN",
-            "description": "Can read, clone, and push to this repository. Can also manage issues, pull requests, and repository settings, including adding collaborators",
+            "description": "Can read, clone, and push to this repository. Can also manage issues, pull\nrequests, and repository settings, including adding collaborators",
             "isDeprecated": false,
             "deprecationReason": null
           },
@@ -37749,7 +37749,7 @@
           },
           {
             "name": "relatedTopics",
-            "description": "A list of related topics, including aliases of this topic, sorted with the most relevant\nfirst. Returns up to 10 Topics.\n",
+            "description": "A list of related topics, including aliases of this topic, sorted with the most relevant\nfirst. Returns up to 10 Topics.",
             "args": [
               {
                 "name": "first",
@@ -37954,7 +37954,7 @@
           },
           {
             "name": "itemShowcase",
-            "description": "Showcases a selection of repositories and gists that the profile owner has either curated or that have been selected automatically based on popularity.",
+            "description": "Showcases a selection of repositories and gists that the profile owner has\neither curated or that have been selected automatically based on popularity.",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -38251,7 +38251,7 @@
       {
         "kind": "OBJECT",
         "name": "ProfileItemShowcase",
-        "description": "A curatable list of repositories relating to a repository owner, which defaults to showing the most popular repositories they own.",
+        "description": "A curatable list of repositories relating to a repository owner, which defaults\nto showing the most popular repositories they own.",
         "fields": [
           {
             "name": "hasPinnedItems",
@@ -38271,7 +38271,7 @@
           },
           {
             "name": "items",
-            "description": "The repositories and gists in the showcase. If the profile owner has any pinned items, those will be returned. Otherwise, the profile owner's popular repositories will be returned.",
+            "description": "The repositories and gists in the showcase. If the profile owner has any\npinned items, those will be returned. Otherwise, the profile owner's popular\nrepositories will be returned.",
             "args": [
               {
                 "name": "after",
@@ -39548,7 +39548,7 @@
           },
           {
             "name": "doesEndInCurrentMonth",
-            "description": "Determine if this collection's time span ends in the current month.\n",
+            "description": "Determine if this collection's time span ends in the current month.",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -39564,7 +39564,7 @@
           },
           {
             "name": "earliestRestrictedContributionDate",
-            "description": "The date of the first restricted contribution the user made in this time period. Can only be non-null when the user has enabled private contribution counts.",
+            "description": "The date of the first restricted contribution the user made in this time\nperiod. Can only be non-null when the user has enabled private contribution counts.",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -39592,11 +39592,11 @@
           },
           {
             "name": "firstIssueContribution",
-            "description": "The first issue the user opened on GitHub. This will be null if that issue was opened outside the collection's time range and ignoreTimeRange is false. If the issue is not visible but the user has opted to show private contributions, a RestrictedContribution will be returned.",
+            "description": "The first issue the user opened on GitHub. This will be null if that issue was\nopened outside the collection's time range and ignoreTimeRange is false. If\nthe issue is not visible but the user has opted to show private contributions,\na RestrictedContribution will be returned.",
             "args": [
               {
                 "name": "ignoreTimeRange",
-                "description": "If true, the first issue will be returned even if it was opened outside of the collection's time range.\n\n**Upcoming Change on 2019-07-01 UTC**\n**Description:** `ignoreTimeRange` will be removed. Use a `ContributionsCollection` starting sufficiently far back\n**Reason:** ignore_time_range will be removed\n",
+                "description": "If true, the first issue will be returned even if it was opened outside of the collection's time range.\n\n**Upcoming Change on 2019-07-01 UTC**\n**Description:** `ignoreTimeRange` will be removed. Use a `ContributionsCollection` starting sufficiently far back\n**Reason:** ignore_time_range will be removed",
                 "type": {
                   "kind": "SCALAR",
                   "name": "Boolean",
@@ -39615,11 +39615,11 @@
           },
           {
             "name": "firstPullRequestContribution",
-            "description": "The first pull request the user opened on GitHub. This will be null if that pull request was opened outside the collection's time range and ignoreTimeRange is not true. If the pull request is not visible but the user has opted to show private contributions, a RestrictedContribution will be returned.",
+            "description": "The first pull request the user opened on GitHub. This will be null if that\npull request was opened outside the collection's time range and\nignoreTimeRange is not true. If the pull request is not visible but the user\nhas opted to show private contributions, a RestrictedContribution will be returned.",
             "args": [
               {
                 "name": "ignoreTimeRange",
-                "description": "If true, the first pull request will be returned even if it was opened outside of the collection's time range.\n\n**Upcoming Change on 2019-07-01 UTC**\n**Description:** `ignoreTimeRange` will be removed. Use a `ContributionsCollection` starting sufficiently far back\n**Reason:** ignore_time_range will be removed\n",
+                "description": "If true, the first pull request will be returned even if it was opened outside of the collection's time range.\n\n**Upcoming Change on 2019-07-01 UTC**\n**Description:** `ignoreTimeRange` will be removed. Use a `ContributionsCollection` starting sufficiently far back\n**Reason:** ignore_time_range will be removed",
                 "type": {
                   "kind": "SCALAR",
                   "name": "Boolean",
@@ -39638,11 +39638,11 @@
           },
           {
             "name": "firstRepositoryContribution",
-            "description": "The first repository the user created on GitHub. This will be null if that first repository was created outside the collection's time range and ignoreTimeRange is false. If the repository is not visible, then a RestrictedContribution is returned.",
+            "description": "The first repository the user created on GitHub. This will be null if that\nfirst repository was created outside the collection's time range and\nignoreTimeRange is false. If the repository is not visible, then a\nRestrictedContribution is returned.",
             "args": [
               {
                 "name": "ignoreTimeRange",
-                "description": "If true, the first repository will be returned even if it was opened outside of the collection's time range.\n\n**Upcoming Change on 2019-07-01 UTC**\n**Description:** `ignoreTimeRange` will be removed. Use a `ContributionsCollection` starting sufficiently far back\n**Reason:** ignore_time_range will be removed\n",
+                "description": "If true, the first repository will be returned even if it was opened outside of the collection's time range.\n\n**Upcoming Change on 2019-07-01 UTC**\n**Description:** `ignoreTimeRange` will be removed. Use a `ContributionsCollection` starting sufficiently far back\n**Reason:** ignore_time_range will be removed",
                 "type": {
                   "kind": "SCALAR",
                   "name": "Boolean",
@@ -39693,7 +39693,7 @@
           },
           {
             "name": "hasAnyRestrictedContributions",
-            "description": "Determine if the user made any contributions in this time frame whose details are not visible because they were made in a private repository. Can only be true if the user enabled private contribution counts.",
+            "description": "Determine if the user made any contributions in this time frame whose details\nare not visible because they were made in a private repository. Can only be\ntrue if the user enabled private contribution counts.",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -39867,11 +39867,11 @@
           },
           {
             "name": "joinedGitHubContribution",
-            "description": "When the user signed up for GitHub. This will be null if that sign up date falls outside the collection's time range and ignoreTimeRange is false.",
+            "description": "When the user signed up for GitHub. This will be null if that sign up date\nfalls outside the collection's time range and ignoreTimeRange is false.",
             "args": [
               {
                 "name": "ignoreTimeRange",
-                "description": "If true, the contribution will be returned even if the user signed up outside of the collection's time range.\n\n**Upcoming Change on 2019-07-01 UTC**\n**Description:** `ignoreTimeRange` will be removed. Use a `ContributionsCollection` starting sufficiently far back\n**Reason:** ignore_time_range will be removed\n",
+                "description": "If true, the contribution will be returned even if the user signed up outside of the collection's time range.\n\n**Upcoming Change on 2019-07-01 UTC**\n**Description:** `ignoreTimeRange` will be removed. Use a `ContributionsCollection` starting sufficiently far back\n**Reason:** ignore_time_range will be removed",
                 "type": {
                   "kind": "SCALAR",
                   "name": "Boolean",
@@ -39890,7 +39890,7 @@
           },
           {
             "name": "latestRestrictedContributionDate",
-            "description": "The date of the most recent restricted contribution the user made in this time period. Can only be non-null when the user has enabled private contribution counts.",
+            "description": "The date of the most recent restricted contribution the user made in this time\nperiod. Can only be non-null when the user has enabled private contribution counts.",
             "args": [],
             "type": {
               "kind": "SCALAR",
@@ -39902,7 +39902,7 @@
           },
           {
             "name": "mostRecentCollectionWithActivity",
-            "description": "When this collection's time range does not include any activity from the user, use this\nto get a different collection from an earlier time range that does have activity.\n",
+            "description": "When this collection's time range does not include any activity from the user, use this\nto get a different collection from an earlier time range that does have activity.",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -39914,7 +39914,7 @@
           },
           {
             "name": "mostRecentCollectionWithoutActivity",
-            "description": "Returns a different contributions collection from an earlier time range than this one\nthat does not have any contributions.\n",
+            "description": "Returns a different contributions collection from an earlier time range than this one\nthat does not have any contributions.",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -39926,7 +39926,7 @@
           },
           {
             "name": "popularIssueContribution",
-            "description": "The issue the user opened on GitHub that received the most comments in the specified\ntime frame.\n",
+            "description": "The issue the user opened on GitHub that received the most comments in the specified\ntime frame.",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -39938,7 +39938,7 @@
           },
           {
             "name": "popularPullRequestContribution",
-            "description": "The pull request the user opened on GitHub that received the most comments in the\nspecified time frame.\n",
+            "description": "The pull request the user opened on GitHub that received the most comments in the\nspecified time frame.",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -40271,7 +40271,7 @@
           },
           {
             "name": "restrictedContributionsCount",
-            "description": "A count of contributions made by the user that the viewer cannot access. Only non-zero when the user has chosen to share their private contribution counts.",
+            "description": "A count of contributions made by the user that the viewer cannot access. Only\nnon-zero when the user has chosen to share their private contribution counts.",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -40805,7 +40805,7 @@
           },
           {
             "name": "totalCount",
-            "description": "Identifies the total count of commits across days and repositories in the connection.\n",
+            "description": "Identifies the total count of commits across days and repositories in the connection.",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -40887,7 +40887,7 @@
           },
           {
             "name": "isRestricted",
-            "description": "Whether this contribution is associated with a record you do not have access to. For\nexample, your own 'first issue' contribution may have been made on a repository you can no\nlonger access.\n",
+            "description": "Whether this contribution is associated with a record you do not have access to. For\nexample, your own 'first issue' contribution may have been made on a repository you can no\nlonger access.",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -40967,7 +40967,7 @@
           },
           {
             "name": "user",
-            "description": "The user who made this contribution.\n",
+            "description": "The user who made this contribution.",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -41000,7 +41000,7 @@
         "fields": [
           {
             "name": "isRestricted",
-            "description": "Whether this contribution is associated with a record you do not have access to. For\nexample, your own 'first issue' contribution may have been made on a repository you can no\nlonger access.\n",
+            "description": "Whether this contribution is associated with a record you do not have access to. For\nexample, your own 'first issue' contribution may have been made on a repository you can no\nlonger access.",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -41064,7 +41064,7 @@
           },
           {
             "name": "user",
-            "description": "The user who made this contribution.\n",
+            "description": "The user who made this contribution.",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -41474,7 +41474,7 @@
         "fields": [
           {
             "name": "isRestricted",
-            "description": "Whether this contribution is associated with a record you do not have access to. For\nexample, your own 'first issue' contribution may have been made on a repository you can no\nlonger access.\n",
+            "description": "Whether this contribution is associated with a record you do not have access to. For\nexample, your own 'first issue' contribution may have been made on a repository you can no\nlonger access.",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -41554,7 +41554,7 @@
           },
           {
             "name": "user",
-            "description": "The user who made this contribution.\n",
+            "description": "The user who made this contribution.",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -41587,7 +41587,7 @@
         "fields": [
           {
             "name": "isRestricted",
-            "description": "Whether this contribution is associated with a record you do not have access to. For\nexample, your own 'first issue' contribution may have been made on a repository you can no\nlonger access.\n",
+            "description": "Whether this contribution is associated with a record you do not have access to. For\nexample, your own 'first issue' contribution may have been made on a repository you can no\nlonger access.",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -41651,7 +41651,7 @@
           },
           {
             "name": "user",
-            "description": "The user who made this contribution.\n",
+            "description": "The user who made this contribution.",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -41705,7 +41705,7 @@
         "fields": [
           {
             "name": "isRestricted",
-            "description": "Whether this contribution is associated with a record you do not have access to. For\nexample, your own 'first issue' contribution may have been made on a repository you can no\nlonger access.\n",
+            "description": "Whether this contribution is associated with a record you do not have access to. For\nexample, your own 'first issue' contribution may have been made on a repository you can no\nlonger access.",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -41785,7 +41785,7 @@
           },
           {
             "name": "user",
-            "description": "The user who made this contribution.\n",
+            "description": "The user who made this contribution.",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -41839,7 +41839,7 @@
         "fields": [
           {
             "name": "isRestricted",
-            "description": "Whether this contribution is associated with a record you do not have access to. For\nexample, your own 'first issue' contribution may have been made on a repository you can no\nlonger access.\n",
+            "description": "Whether this contribution is associated with a record you do not have access to. For\nexample, your own 'first issue' contribution may have been made on a repository you can no\nlonger access.",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -41919,7 +41919,7 @@
           },
           {
             "name": "user",
-            "description": "The user who made this contribution.\n",
+            "description": "The user who made this contribution.",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -42216,7 +42216,7 @@
         "fields": [
           {
             "name": "isRestricted",
-            "description": "Whether this contribution is associated with a record you do not have access to. For\nexample, your own 'first issue' contribution may have been made on a repository you can no\nlonger access.\n",
+            "description": "Whether this contribution is associated with a record you do not have access to. For\nexample, your own 'first issue' contribution may have been made on a repository you can no\nlonger access.",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -42280,7 +42280,7 @@
           },
           {
             "name": "user",
-            "description": "The user who made this contribution.\n",
+            "description": "The user who made this contribution.",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -42635,7 +42635,7 @@
         "fields": [
           {
             "name": "isRestricted",
-            "description": "Whether this contribution is associated with a record you do not have access to. For\nexample, your own 'first issue' contribution may have been made on a repository you can no\nlonger access.\n",
+            "description": "Whether this contribution is associated with a record you do not have access to. For\nexample, your own 'first issue' contribution may have been made on a repository you can no\nlonger access.",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -42747,7 +42747,7 @@
           },
           {
             "name": "user",
-            "description": "The user who made this contribution.\n",
+            "description": "The user who made this contribution.",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -46667,7 +46667,7 @@
           },
           {
             "name": "vulnerableVersionRange",
-            "description": "A string that describes the vulnerable package versions.\nThis string follows a basic syntax with a few forms.\n+ `= 0.2.0` denotes a single vulnerable version.\n+ `<= 1.0.8` denotes a version range up to and including the specified version\n+ `< 0.1.11` denotes a version range up to, but excluding, the specified version\n+ `>= 4.3.0, < 4.3.5` denotes a version range with a known minimum and maximum version.\n+ `>= 0.0.1` denotes a version range with a known minimum, but no known maximum\n",
+            "description": "A string that describes the vulnerable package versions.\nThis string follows a basic syntax with a few forms.\n+ `= 0.2.0` denotes a single vulnerable version.\n+ `<= 1.0.8` denotes a version range up to and including the specified version\n+ `< 0.1.11` denotes a version range up to, but excluding, the specified version\n+ `>= 4.3.0, < 4.3.5` denotes a version range with a known minimum and maximum version.\n+ `>= 0.0.1` denotes a version range with a known minimum, but no known maximum",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -49452,7 +49452,7 @@
           },
           {
             "name": "organizationId",
-            "description": "The ID of the organization whose members will be allowed to see the status. If omitted, the status will be publicly visible.",
+            "description": "The ID of the organization whose members will be allowed to see the status. If\nomitted, the status will be publicly visible.",
             "type": {
               "kind": "SCALAR",
               "name": "ID",
@@ -50490,7 +50490,7 @@
           },
           {
             "name": "baseRefName",
-            "description": "The name of the branch you want your changes pulled into. This should be an existing branch\non the current repository. You cannot update the base branch on a pull request to point\nto another repository.\n",
+            "description": "The name of the branch you want your changes pulled into. This should be an existing branch\non the current repository. You cannot update the base branch on a pull request to point\nto another repository.",
             "type": {
               "kind": "NON_NULL",
               "name": null,
@@ -50504,7 +50504,7 @@
           },
           {
             "name": "headRefName",
-            "description": "The name of the branch where your changes are implemented. For cross-repository pull requests\nin the same network, namespace `head_ref_name` with a user like this: `username:branch`.\n",
+            "description": "The name of the branch where your changes are implemented. For cross-repository pull requests\nin the same network, namespace `head_ref_name` with a user like this: `username:branch`.",
             "type": {
               "kind": "NON_NULL",
               "name": null,
@@ -53609,7 +53609,7 @@
           },
           {
             "name": "baseRefName",
-            "description": "The name of the branch you want your changes pulled into. This should be an existing branch\non the current repository.\n",
+            "description": "The name of the branch you want your changes pulled into. This should be an existing branch\non the current repository.",
             "type": {
               "kind": "SCALAR",
               "name": "String",
@@ -54858,94 +54858,13 @@
         "possibleTypes": null
       },
       {
-        "kind": "SCALAR",
-        "name": "Float",
-        "description": "The `Float` scalar type represents signed double-precision fractional values as specified by [IEEE 754](https://en.wikipedia.org/wiki/IEEE_floating_point). ",
-        "fields": null,
-        "inputFields": null,
-        "interfaces": null,
-        "enumValues": null,
-        "possibleTypes": null
-      },
-      {
         "kind": "OBJECT",
-        "name": "Bot",
-        "description": "A special type of user which takes actions on behalf of GitHub Apps.",
+        "name": "AppEdge",
+        "description": "An edge in a connection.",
         "fields": [
           {
-            "name": "avatarUrl",
-            "description": "A URL pointing to the GitHub App's public avatar.",
-            "args": [
-              {
-                "name": "size",
-                "description": "The size of the resulting square image.",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Int",
-                  "ofType": null
-                },
-                "defaultValue": null
-              }
-            ],
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "URI",
-                "ofType": null
-              }
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "createdAt",
-            "description": "Identifies the date and time when the object was created.",
-            "args": [],
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "DateTime",
-                "ofType": null
-              }
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "databaseId",
-            "description": "Identifies the primary key from the database.",
-            "args": [],
-            "type": {
-              "kind": "SCALAR",
-              "name": "Int",
-              "ofType": null
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "id",
-            "description": null,
-            "args": [],
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "ID",
-                "ofType": null
-              }
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "login",
-            "description": "The username of the actor.",
+            "name": "cursor",
+            "description": "A cursor for use in pagination.",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -54960,72 +54879,20 @@
             "deprecationReason": null
           },
           {
-            "name": "resourcePath",
-            "description": "The HTTP path for this bot",
+            "name": "node",
+            "description": "The item at the end of the edge.",
             "args": [],
             "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "URI",
-                "ofType": null
-              }
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "updatedAt",
-            "description": "Identifies the date and time when the object was last updated.",
-            "args": [],
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "DateTime",
-                "ofType": null
-              }
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "url",
-            "description": "The HTTP URL for this bot",
-            "args": [],
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "URI",
-                "ofType": null
-              }
+              "kind": "OBJECT",
+              "name": "App",
+              "ofType": null
             },
             "isDeprecated": false,
             "deprecationReason": null
           }
         ],
         "inputFields": null,
-        "interfaces": [
-          {
-            "kind": "INTERFACE",
-            "name": "Node",
-            "ofType": null
-          },
-          {
-            "kind": "INTERFACE",
-            "name": "Actor",
-            "ofType": null
-          },
-          {
-            "kind": "INTERFACE",
-            "name": "UniformResourceLocatable",
-            "ofType": null
-          }
-        ],
+        "interfaces": [],
         "enumValues": null,
         "possibleTypes": null
       },
@@ -55208,84 +55075,31 @@
         "possibleTypes": null
       },
       {
-        "kind": "ENUM",
-        "name": "IssuePubSubTopic",
-        "description": "The possible PubSub channels for an issue.",
-        "fields": null,
-        "inputFields": null,
-        "interfaces": null,
-        "enumValues": [
-          {
-            "name": "UPDATED",
-            "description": "The channel ID for observing issue updates.",
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "MARKASREAD",
-            "description": "The channel ID for marking an issue as read.",
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "TIMELINE",
-            "description": "The channel ID for updating items on the issue timeline.",
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "STATE",
-            "description": "The channel ID for observing issue state updates.",
-            "isDeprecated": false,
-            "deprecationReason": null
-          }
-        ],
-        "possibleTypes": null
-      },
-      {
-        "kind": "ENUM",
-        "name": "IdentityProviderConfigurationState",
-        "description": "The possible states in which authentication can be configured with an identity provider.",
-        "fields": null,
-        "inputFields": null,
-        "interfaces": null,
-        "enumValues": [
-          {
-            "name": "ENFORCED",
-            "description": "Authentication with an identity provider is configured and enforced.",
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "CONFIGURED",
-            "description": "Authentication with an identity provider is configured but not enforced.",
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "UNCONFIGURED",
-            "description": "Authentication with an identity provider is not configured.",
-            "isDeprecated": false,
-            "deprecationReason": null
-          }
-        ],
-        "possibleTypes": null
-      },
-      {
         "kind": "OBJECT",
-        "name": "RepositoryInvitationEdge",
-        "description": "An edge in a connection.",
+        "name": "Bot",
+        "description": "A special type of user which takes actions on behalf of GitHub Apps.",
         "fields": [
           {
-            "name": "cursor",
-            "description": "A cursor for use in pagination.",
-            "args": [],
+            "name": "avatarUrl",
+            "description": "A URL pointing to the GitHub App's public avatar.",
+            "args": [
+              {
+                "name": "size",
+                "description": "The size of the resulting square image.",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Int",
+                  "ofType": null
+                },
+                "defaultValue": null
+              }
+            ],
             "type": {
               "kind": "NON_NULL",
               "name": null,
               "ofType": {
                 "kind": "SCALAR",
-                "name": "String",
+                "name": "URI",
                 "ofType": null
               }
             },
@@ -55293,28 +55107,33 @@
             "deprecationReason": null
           },
           {
-            "name": "node",
-            "description": "The item at the end of the edge.",
+            "name": "createdAt",
+            "description": "Identifies the date and time when the object was created.",
             "args": [],
             "type": {
-              "kind": "OBJECT",
-              "name": "RepositoryInvitation",
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "DateTime",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "databaseId",
+            "description": "Identifies the primary key from the database.",
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "Int",
               "ofType": null
             },
             "isDeprecated": false,
             "deprecationReason": null
-          }
-        ],
-        "inputFields": null,
-        "interfaces": [],
-        "enumValues": null,
-        "possibleTypes": null
-      },
-      {
-        "kind": "OBJECT",
-        "name": "RepositoryInvitation",
-        "description": "An invitation for a user to be added to a repository.",
-        "fields": [
+          },
           {
             "name": "id",
             "description": null,
@@ -55332,15 +55151,15 @@
             "deprecationReason": null
           },
           {
-            "name": "invitee",
-            "description": "The user who received the invitation.",
+            "name": "login",
+            "description": "The username of the actor.",
             "args": [],
             "type": {
               "kind": "NON_NULL",
               "name": null,
               "ofType": {
-                "kind": "OBJECT",
-                "name": "User",
+                "kind": "SCALAR",
+                "name": "String",
                 "ofType": null
               }
             },
@@ -55348,15 +55167,15 @@
             "deprecationReason": null
           },
           {
-            "name": "inviter",
-            "description": "The user who created the invitation.",
+            "name": "resourcePath",
+            "description": "The HTTP path for this bot",
             "args": [],
             "type": {
               "kind": "NON_NULL",
               "name": null,
               "ofType": {
-                "kind": "OBJECT",
-                "name": "User",
+                "kind": "SCALAR",
+                "name": "URI",
                 "ofType": null
               }
             },
@@ -55364,15 +55183,15 @@
             "deprecationReason": null
           },
           {
-            "name": "permission",
-            "description": "The permission granted on this repository by this invitation.",
+            "name": "updatedAt",
+            "description": "Identifies the date and time when the object was last updated.",
             "args": [],
             "type": {
               "kind": "NON_NULL",
               "name": null,
               "ofType": {
-                "kind": "ENUM",
-                "name": "RepositoryPermission",
+                "kind": "SCALAR",
+                "name": "DateTime",
                 "ofType": null
               }
             },
@@ -55380,13 +55199,17 @@
             "deprecationReason": null
           },
           {
-            "name": "repository",
-            "description": "The Repository the user is invited to.",
+            "name": "url",
+            "description": "The HTTP URL for this bot",
             "args": [],
             "type": {
-              "kind": "INTERFACE",
-              "name": "RepositoryInfo",
-              "ofType": null
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "URI",
+                "ofType": null
+              }
             },
             "isDeprecated": false,
             "deprecationReason": null
@@ -55398,225 +55221,18 @@
             "kind": "INTERFACE",
             "name": "Node",
             "ofType": null
+          },
+          {
+            "kind": "INTERFACE",
+            "name": "Actor",
+            "ofType": null
+          },
+          {
+            "kind": "INTERFACE",
+            "name": "UniformResourceLocatable",
+            "ofType": null
           }
         ],
-        "enumValues": null,
-        "possibleTypes": null
-      },
-      {
-        "kind": "ENUM",
-        "name": "PullRequestPubSubTopic",
-        "description": "The possible PubSub channels for a pull request.",
-        "fields": null,
-        "inputFields": null,
-        "interfaces": null,
-        "enumValues": [
-          {
-            "name": "UPDATED",
-            "description": "The channel ID for observing pull request updates.",
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "MARKASREAD",
-            "description": "The channel ID for marking an pull request as read.",
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "HEAD_REF",
-            "description": "The channel ID for observing head ref updates.",
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "TIMELINE",
-            "description": "The channel ID for updating items on the pull request timeline.",
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "STATE",
-            "description": "The channel ID for observing pull request state updates.",
-            "isDeprecated": false,
-            "deprecationReason": null
-          }
-        ],
-        "possibleTypes": null
-      },
-      {
-        "kind": "ENUM",
-        "name": "RepositoryCollaboratorAffiliation",
-        "description": "The affiliation type between collaborator and repository.",
-        "fields": null,
-        "inputFields": null,
-        "interfaces": null,
-        "enumValues": [
-          {
-            "name": "ALL",
-            "description": "All collaborators of the repository.",
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "OUTSIDE",
-            "description": "All outside collaborators of an organization-owned repository.",
-            "isDeprecated": false,
-            "deprecationReason": null
-          }
-        ],
-        "possibleTypes": null
-      },
-      {
-        "kind": "OBJECT",
-        "name": "TopicConnection",
-        "description": "The connection type for Topic.",
-        "fields": [
-          {
-            "name": "edges",
-            "description": "A list of edges.",
-            "args": [],
-            "type": {
-              "kind": "LIST",
-              "name": null,
-              "ofType": {
-                "kind": "OBJECT",
-                "name": "TopicEdge",
-                "ofType": null
-              }
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "nodes",
-            "description": "A list of nodes.",
-            "args": [],
-            "type": {
-              "kind": "LIST",
-              "name": null,
-              "ofType": {
-                "kind": "OBJECT",
-                "name": "Topic",
-                "ofType": null
-              }
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "pageInfo",
-            "description": "Information to aid in pagination.",
-            "args": [],
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "OBJECT",
-                "name": "PageInfo",
-                "ofType": null
-              }
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "totalCount",
-            "description": "Identifies the total count of items in the connection.",
-            "args": [],
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "Int",
-                "ofType": null
-              }
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          }
-        ],
-        "inputFields": null,
-        "interfaces": [],
-        "enumValues": null,
-        "possibleTypes": null
-      },
-      {
-        "kind": "OBJECT",
-        "name": "TopicEdge",
-        "description": "An edge in a connection.",
-        "fields": [
-          {
-            "name": "cursor",
-            "description": "A cursor for use in pagination.",
-            "args": [],
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              }
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "node",
-            "description": "The item at the end of the edge.",
-            "args": [],
-            "type": {
-              "kind": "OBJECT",
-              "name": "Topic",
-              "ofType": null
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          }
-        ],
-        "inputFields": null,
-        "interfaces": [],
-        "enumValues": null,
-        "possibleTypes": null
-      },
-      {
-        "kind": "OBJECT",
-        "name": "AppEdge",
-        "description": "An edge in a connection.",
-        "fields": [
-          {
-            "name": "cursor",
-            "description": "A cursor for use in pagination.",
-            "args": [],
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              }
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "node",
-            "description": "The item at the end of the edge.",
-            "args": [],
-            "type": {
-              "kind": "OBJECT",
-              "name": "App",
-              "ofType": null
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          }
-        ],
-        "inputFields": null,
-        "interfaces": [],
         "enumValues": null,
         "possibleTypes": null
       },
@@ -55645,388 +55261,6 @@
             "ofType": null
           }
         ]
-      },
-      {
-        "kind": "INPUT_OBJECT",
-        "name": "MinimizeCommentInput",
-        "description": "Autogenerated input type of MinimizeComment",
-        "fields": null,
-        "inputFields": [
-          {
-            "name": "subjectId",
-            "description": "The Node ID of the subject to modify.",
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "ID",
-                "ofType": null
-              }
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "classifier",
-            "description": "The classification of comment",
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "ENUM",
-                "name": "ReportedContentClassifiers",
-                "ofType": null
-              }
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "clientMutationId",
-            "description": "A unique identifier for the client performing the mutation.",
-            "type": {
-              "kind": "SCALAR",
-              "name": "String",
-              "ofType": null
-            },
-            "defaultValue": null
-          }
-        ],
-        "interfaces": null,
-        "enumValues": null,
-        "possibleTypes": null
-      },
-      {
-        "kind": "ENUM",
-        "name": "ReportedContentClassifiers",
-        "description": "The reasons a piece of content can be reported or minimized.",
-        "fields": null,
-        "inputFields": null,
-        "interfaces": null,
-        "enumValues": [
-          {
-            "name": "SPAM",
-            "description": "A spammy piece of content",
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "ABUSE",
-            "description": "An abusive or harassing piece of content",
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "OFF_TOPIC",
-            "description": "An irrelevant piece of content",
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "OUTDATED",
-            "description": "An outdated piece of content",
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "RESOLVED",
-            "description": "The content has been resolved",
-            "isDeprecated": false,
-            "deprecationReason": null
-          }
-        ],
-        "possibleTypes": null
-      },
-      {
-        "kind": "INPUT_OBJECT",
-        "name": "UnminimizeCommentInput",
-        "description": "Autogenerated input type of UnminimizeComment",
-        "fields": null,
-        "inputFields": [
-          {
-            "name": "subjectId",
-            "description": "The Node ID of the subject to modify.",
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "ID",
-                "ofType": null
-              }
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "clientMutationId",
-            "description": "A unique identifier for the client performing the mutation.",
-            "type": {
-              "kind": "SCALAR",
-              "name": "String",
-              "ofType": null
-            },
-            "defaultValue": null
-          }
-        ],
-        "interfaces": null,
-        "enumValues": null,
-        "possibleTypes": null
-      },
-      {
-        "kind": "INPUT_OBJECT",
-        "name": "ImportProjectInput",
-        "description": "Autogenerated input type of ImportProject",
-        "fields": null,
-        "inputFields": [
-          {
-            "name": "ownerName",
-            "description": "The name of the Organization or User to create the Project under.",
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              }
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "name",
-            "description": "The name of Project.",
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              }
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "body",
-            "description": "The description of Project.",
-            "type": {
-              "kind": "SCALAR",
-              "name": "String",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "public",
-            "description": "Whether the Project is public or not.",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Boolean",
-              "ofType": null
-            },
-            "defaultValue": "false"
-          },
-          {
-            "name": "columnImports",
-            "description": "A list of columns containing issues and pull requests.",
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "LIST",
-                "name": null,
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "name": null,
-                  "ofType": {
-                    "kind": "INPUT_OBJECT",
-                    "name": "ProjectColumnImport",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "clientMutationId",
-            "description": "A unique identifier for the client performing the mutation.",
-            "type": {
-              "kind": "SCALAR",
-              "name": "String",
-              "ofType": null
-            },
-            "defaultValue": null
-          }
-        ],
-        "interfaces": null,
-        "enumValues": null,
-        "possibleTypes": null
-      },
-      {
-        "kind": "INPUT_OBJECT",
-        "name": "ProjectColumnImport",
-        "description": "A project column and a list of its issues and PRs.",
-        "fields": null,
-        "inputFields": [
-          {
-            "name": "columnName",
-            "description": "The name of the column.",
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              }
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "position",
-            "description": "The position of the column, starting from 0.",
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "Int",
-                "ofType": null
-              }
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "issues",
-            "description": "A list of issues and pull requests in the column.",
-            "type": {
-              "kind": "LIST",
-              "name": null,
-              "ofType": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "INPUT_OBJECT",
-                  "name": "ProjectCardImport",
-                  "ofType": null
-                }
-              }
-            },
-            "defaultValue": null
-          }
-        ],
-        "interfaces": null,
-        "enumValues": null,
-        "possibleTypes": null
-      },
-      {
-        "kind": "INPUT_OBJECT",
-        "name": "ProjectCardImport",
-        "description": "An issue or PR and its owning repository to be used in a project card.",
-        "fields": null,
-        "inputFields": [
-          {
-            "name": "repository",
-            "description": "Repository name with owner (owner/repository).",
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              }
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "number",
-            "description": "The issue or pull request number.",
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "Int",
-                "ofType": null
-              }
-            },
-            "defaultValue": null
-          }
-        ],
-        "interfaces": null,
-        "enumValues": null,
-        "possibleTypes": null
-      },
-      {
-        "kind": "INPUT_OBJECT",
-        "name": "PinIssueInput",
-        "description": "Autogenerated input type of PinIssue",
-        "fields": null,
-        "inputFields": [
-          {
-            "name": "issueId",
-            "description": "The ID of the issue to be pinned",
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "ID",
-                "ofType": null
-              }
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "clientMutationId",
-            "description": "A unique identifier for the client performing the mutation.",
-            "type": {
-              "kind": "SCALAR",
-              "name": "String",
-              "ofType": null
-            },
-            "defaultValue": null
-          }
-        ],
-        "interfaces": null,
-        "enumValues": null,
-        "possibleTypes": null
-      },
-      {
-        "kind": "INPUT_OBJECT",
-        "name": "UnpinIssueInput",
-        "description": "Autogenerated input type of UnpinIssue",
-        "fields": null,
-        "inputFields": [
-          {
-            "name": "issueId",
-            "description": "The ID of the issue to be unpinned",
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "ID",
-                "ofType": null
-              }
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "clientMutationId",
-            "description": "A unique identifier for the client performing the mutation.",
-            "type": {
-              "kind": "SCALAR",
-              "name": "String",
-              "ofType": null
-            },
-            "defaultValue": null
-          }
-        ],
-        "interfaces": null,
-        "enumValues": null,
-        "possibleTypes": null
       },
       {
         "kind": "OBJECT",
@@ -56336,7 +55570,7 @@
           },
           {
             "name": "state",
-            "description": "The state of this signature. `VALID` if signature is valid and verified by GitHub, otherwise represents reason why signature is considered invalid.",
+            "description": "The state of this signature. `VALID` if signature is valid and verified by\nGitHub, otherwise represents reason why signature is considered invalid.",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -56375,6 +55609,578 @@
             "ofType": null
           }
         ],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "ENUM",
+        "name": "IdentityProviderConfigurationState",
+        "description": "The possible states in which authentication can be configured with an identity provider.",
+        "fields": null,
+        "inputFields": null,
+        "interfaces": null,
+        "enumValues": [
+          {
+            "name": "ENFORCED",
+            "description": "Authentication with an identity provider is configured and enforced.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "CONFIGURED",
+            "description": "Authentication with an identity provider is configured but not enforced.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "UNCONFIGURED",
+            "description": "Authentication with an identity provider is not configured.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "ImportProjectInput",
+        "description": "Autogenerated input type of ImportProject",
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "ownerName",
+            "description": "The name of the Organization or User to create the Project under.",
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "name",
+            "description": "The name of Project.",
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "body",
+            "description": "The description of Project.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "public",
+            "description": "Whether the Project is public or not.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Boolean",
+              "ofType": null
+            },
+            "defaultValue": "false"
+          },
+          {
+            "name": "columnImports",
+            "description": "A list of columns containing issues and pull requests.",
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "LIST",
+                "name": null,
+                "ofType": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "kind": "INPUT_OBJECT",
+                    "name": "ProjectColumnImport",
+                    "ofType": null
+                  }
+                }
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "clientMutationId",
+            "description": "A unique identifier for the client performing the mutation.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "defaultValue": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "ProjectColumnImport",
+        "description": "A project column and a list of its issues and PRs.",
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "columnName",
+            "description": "The name of the column.",
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "position",
+            "description": "The position of the column, starting from 0.",
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "issues",
+            "description": "A list of issues and pull requests in the column.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "ProjectCardImport",
+                  "ofType": null
+                }
+              }
+            },
+            "defaultValue": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "ProjectCardImport",
+        "description": "An issue or PR and its owning repository to be used in a project card.",
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "repository",
+            "description": "Repository name with owner (owner/repository).",
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "number",
+            "description": "The issue or pull request number.",
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              }
+            },
+            "defaultValue": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "ENUM",
+        "name": "IssuePubSubTopic",
+        "description": "The possible PubSub channels for an issue.",
+        "fields": null,
+        "inputFields": null,
+        "interfaces": null,
+        "enumValues": [
+          {
+            "name": "UPDATED",
+            "description": "The channel ID for observing issue updates.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "MARKASREAD",
+            "description": "The channel ID for marking an issue as read.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "TIMELINE",
+            "description": "The channel ID for updating items on the issue timeline.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "STATE",
+            "description": "The channel ID for observing issue state updates.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "MinimizeCommentInput",
+        "description": "Autogenerated input type of MinimizeComment",
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "subjectId",
+            "description": "The Node ID of the subject to modify.",
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "ID",
+                "ofType": null
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "classifier",
+            "description": "The classification of comment",
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "ENUM",
+                "name": "ReportedContentClassifiers",
+                "ofType": null
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "clientMutationId",
+            "description": "A unique identifier for the client performing the mutation.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "defaultValue": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "ENUM",
+        "name": "ReportedContentClassifiers",
+        "description": "The reasons a piece of content can be reported or minimized.",
+        "fields": null,
+        "inputFields": null,
+        "interfaces": null,
+        "enumValues": [
+          {
+            "name": "SPAM",
+            "description": "A spammy piece of content",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "ABUSE",
+            "description": "An abusive or harassing piece of content",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "OFF_TOPIC",
+            "description": "An irrelevant piece of content",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "OUTDATED",
+            "description": "An outdated piece of content",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "RESOLVED",
+            "description": "The content has been resolved",
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "PinIssueInput",
+        "description": "Autogenerated input type of PinIssue",
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "issueId",
+            "description": "The ID of the issue to be pinned",
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "ID",
+                "ofType": null
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "clientMutationId",
+            "description": "A unique identifier for the client performing the mutation.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "defaultValue": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "ENUM",
+        "name": "PullRequestPubSubTopic",
+        "description": "The possible PubSub channels for a pull request.",
+        "fields": null,
+        "inputFields": null,
+        "interfaces": null,
+        "enumValues": [
+          {
+            "name": "UPDATED",
+            "description": "The channel ID for observing pull request updates.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "MARKASREAD",
+            "description": "The channel ID for marking an pull request as read.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "HEAD_REF",
+            "description": "The channel ID for observing head ref updates.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "TIMELINE",
+            "description": "The channel ID for updating items on the pull request timeline.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "STATE",
+            "description": "The channel ID for observing pull request state updates.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "possibleTypes": null
+      },
+      {
+        "kind": "ENUM",
+        "name": "RepositoryCollaboratorAffiliation",
+        "description": "The affiliation type between collaborator and repository.",
+        "fields": null,
+        "inputFields": null,
+        "interfaces": null,
+        "enumValues": [
+          {
+            "name": "ALL",
+            "description": "All collaborators of the repository.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "OUTSIDE",
+            "description": "All outside collaborators of an organization-owned repository.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "RepositoryInvitation",
+        "description": "An invitation for a user to be added to a repository.",
+        "fields": [
+          {
+            "name": "id",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "ID",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "invitee",
+            "description": "The user who received the invitation.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "User",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "inviter",
+            "description": "The user who created the invitation.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "User",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "permission",
+            "description": "The permission granted on this repository by this invitation.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "ENUM",
+                "name": "RepositoryPermission",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "repository",
+            "description": "The Repository the user is invited to.",
+            "args": [],
+            "type": {
+              "kind": "INTERFACE",
+              "name": "RepositoryInfo",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [
+          {
+            "kind": "INTERFACE",
+            "name": "Node",
+            "ofType": null
+          }
+        ],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "RepositoryInvitationEdge",
+        "description": "An edge in a connection.",
+        "fields": [
+          {
+            "name": "cursor",
+            "description": "A cursor for use in pagination.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "node",
+            "description": "The item at the end of the edge.",
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "RepositoryInvitation",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
         "enumValues": null,
         "possibleTypes": null
       },
@@ -56461,7 +56267,7 @@
           },
           {
             "name": "state",
-            "description": "The state of this signature. `VALID` if signature is valid and verified by GitHub, otherwise represents reason why signature is considered invalid.",
+            "description": "The state of this signature. `VALID` if signature is valid and verified by\nGitHub, otherwise represents reason why signature is considered invalid.",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -56679,6 +56485,120 @@
       },
       {
         "kind": "OBJECT",
+        "name": "TopicConnection",
+        "description": "The connection type for Topic.",
+        "fields": [
+          {
+            "name": "edges",
+            "description": "A list of edges.",
+            "args": [],
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "TopicEdge",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "nodes",
+            "description": "A list of nodes.",
+            "args": [],
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "Topic",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "pageInfo",
+            "description": "Information to aid in pagination.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "PageInfo",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "totalCount",
+            "description": "Identifies the total count of items in the connection.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "TopicEdge",
+        "description": "An edge in a connection.",
+        "fields": [
+          {
+            "name": "cursor",
+            "description": "A cursor for use in pagination.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "node",
+            "description": "The item at the end of the edge.",
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "Topic",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
         "name": "UnknownSignature",
         "description": "Represents an unknown signature on a Commit or Tag.",
         "fields": [
@@ -56760,7 +56680,7 @@
           },
           {
             "name": "state",
-            "description": "The state of this signature. `VALID` if signature is valid and verified by GitHub, otherwise represents reason why signature is considered invalid.",
+            "description": "The state of this signature. `VALID` if signature is valid and verified by\nGitHub, otherwise represents reason why signature is considered invalid.",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -56801,34 +56721,79 @@
         ],
         "enumValues": null,
         "possibleTypes": null
-      }
-    ],
-    "directives": [
+      },
       {
-        "name": "include",
-        "description": "Directs the executor to include this field or fragment only when the `if` argument is true.",
-        "locations": [
-          "FIELD",
-          "FRAGMENT_SPREAD",
-          "INLINE_FRAGMENT"
-        ],
-        "args": [
+        "kind": "INPUT_OBJECT",
+        "name": "UnminimizeCommentInput",
+        "description": "Autogenerated input type of UnminimizeComment",
+        "fields": null,
+        "inputFields": [
           {
-            "name": "if",
-            "description": "Included when true.",
+            "name": "subjectId",
+            "description": "The Node ID of the subject to modify.",
             "type": {
               "kind": "NON_NULL",
               "name": null,
               "ofType": {
                 "kind": "SCALAR",
-                "name": "Boolean",
+                "name": "ID",
                 "ofType": null
               }
             },
             "defaultValue": null
+          },
+          {
+            "name": "clientMutationId",
+            "description": "A unique identifier for the client performing the mutation.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "defaultValue": null
           }
-        ]
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
       },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "UnpinIssueInput",
+        "description": "Autogenerated input type of UnpinIssue",
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "issueId",
+            "description": "The ID of the issue to be unpinned",
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "ID",
+                "ofType": null
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "clientMutationId",
+            "description": "A unique identifier for the client performing the mutation.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "defaultValue": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      }
+    ],
+    "directives": [
       {
         "name": "skip",
         "description": "Directs the executor to skip this field or fragment when the `if` argument is true.",
@@ -56855,6 +56820,31 @@
         ]
       },
       {
+        "name": "include",
+        "description": "Directs the executor to include this field or fragment only when the `if` argument is true.",
+        "locations": [
+          "FIELD",
+          "FRAGMENT_SPREAD",
+          "INLINE_FRAGMENT"
+        ],
+        "args": [
+          {
+            "name": "if",
+            "description": "Included when true.",
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              }
+            },
+            "defaultValue": null
+          }
+        ]
+      },
+      {
         "name": "deprecated",
         "description": "Marks an element of a GraphQL schema as no longer supported.",
         "locations": [
@@ -56864,7 +56854,7 @@
         "args": [
           {
             "name": "reason",
-            "description": "Explains why this element was deprecated, usually also including a suggestion for how to access supported similar data. Formatted in [Markdown](https://daringfireball.net/projects/markdown/).",
+            "description": "Explains why this element was deprecated, usually also including a suggestion for how to access supported similar data. Formatted using the Markdown syntax (as specified by [CommonMark](https://commonmark.org/).",
             "type": {
               "kind": "SCALAR",
               "name": "String",
