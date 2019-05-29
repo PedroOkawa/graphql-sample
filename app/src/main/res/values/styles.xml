@@ -17,8 +17,18 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:background">@color/colorPrimary</item>
         <item name="titleTextColor">@android:color/white</item>
-        <item name="titleMargin">10dp</item>
+        <item name="titleMargin">@dimen/toolbar_style_title_margin</item>
         <item name="android:minHeight">?attr/actionBarSize</item>
+    </style>
+
+    <style name="Title">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="Description">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
     </style>
 
 </resources>

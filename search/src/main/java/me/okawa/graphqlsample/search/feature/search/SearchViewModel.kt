@@ -10,7 +10,7 @@ import me.okawa.graphqlsample.model.Data
 import me.okawa.graphqlsample.model.dataError
 import me.okawa.graphqlsample.model.dataLoading
 import me.okawa.graphqlsample.model.dataSuccess
-import me.okawa.graphqlsample.utils.SchedulerProvider
+import me.okawa.graphqlsample.utils.provider.SchedulerProvider
 import javax.inject.Inject
 
 class SearchViewModel @Inject constructor(
@@ -28,7 +28,11 @@ class SearchViewModel @Inject constructor(
 
     private var cursorAfter: String? = null
 
-    fun search(query: String) {
+    fun search(query: String, reset: Boolean = true) {
+        if(reset) {
+            cursorAfter = null
+        }
+
         searchUseCase
             .execute(query, PAGE_SIZE, cursorAfter)
             .observeOn(schedulerProvider.ui())

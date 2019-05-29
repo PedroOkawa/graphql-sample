@@ -1,4 +1,4 @@
-package me.okawa.graphqlsample.utils
+package me.okawa.graphqlsample.utils.provider
 
 import io.reactivex.Scheduler
 

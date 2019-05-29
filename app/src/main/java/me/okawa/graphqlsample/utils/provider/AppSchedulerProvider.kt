@@ -1,10 +1,11 @@
-package me.okawa.graphqlsample.utils
+package me.okawa.graphqlsample.utils.provider
 
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 import javax.inject.Inject
 
-class AppSchedulerProvider @Inject constructor() : SchedulerProvider {
+class AppSchedulerProvider @Inject constructor() :
+    SchedulerProvider {
     override fun computation() = Schedulers.computation()
     override fun ui() = AndroidSchedulers.mainThread()
     override fun io() = Schedulers.io()

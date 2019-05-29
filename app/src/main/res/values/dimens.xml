@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="search_logo_margin">12dp</dimen>
+
+    <dimen name="repository_adapter_margin">8dp</dimen>
+    <dimen name="repository_adapter_elevation">16dp</dimen>
+    <dimen name="repository_adapter_content_padding">8dp</dimen>
+    <dimen name="repository_adapter_title_vertical_margin">4dp</dimen>
+    <dimen name="repository_adapter_description_vertical_margin">12dp</dimen>
+
+    <dimen name="toolbar_style_title_margin">10dp</dimen>
+
+    <dimen name="text_size_large">18dp</dimen>
+    <dimen name="text_size_normal">12dp</dimen>
 </resources>

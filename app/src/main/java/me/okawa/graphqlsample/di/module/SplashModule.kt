@@ -5,7 +5,7 @@ import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap
 import me.okawa.graphqlsample.feature.splash.SplashViewModel
-import me.okawa.graphqlsample.utils.ViewModelKey
+import me.okawa.graphqlsample.utils.viewmodel.ViewModelKey
 
 @Module(includes = [ ViewModelModule::class ])
 abstract class SplashModule {

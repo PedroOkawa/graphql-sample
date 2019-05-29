@@ -1,4 +1,4 @@
-package me.okawa.graphqlsample.utils
+package me.okawa.graphqlsample.utils.viewmodel
 
 import androidx.lifecycle.ViewModel
 import dagger.MapKey

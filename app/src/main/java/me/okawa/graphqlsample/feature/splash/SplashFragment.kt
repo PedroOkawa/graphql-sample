@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModelProvider
 import dagger.android.support.AndroidSupportInjection
 import me.okawa.graphqlsample.R
 import me.okawa.graphqlsample.feature.common.BaseFragment
-import me.okawa.graphqlsample.utils.ActivityManager
+import me.okawa.graphqlsample.utils.manager.ActivityManager
 import javax.inject.Inject
 
 class SplashFragment : BaseFragment() {

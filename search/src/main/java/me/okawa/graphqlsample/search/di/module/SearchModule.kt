@@ -6,7 +6,7 @@ import dagger.Module
 import dagger.multibindings.IntoMap
 import me.okawa.graphqlsample.di.module.ViewModelModule
 import me.okawa.graphqlsample.search.feature.search.SearchViewModel
-import me.okawa.graphqlsample.utils.ViewModelKey
+import me.okawa.graphqlsample.utils.viewmodel.ViewModelKey
 
 @Module(includes = [ ViewModelModule::class ])
 abstract class SearchModule {

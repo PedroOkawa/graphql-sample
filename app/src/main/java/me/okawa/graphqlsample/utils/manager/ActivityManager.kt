@@ -1,4 +1,4 @@
-package me.okawa.graphqlsample.utils
+package me.okawa.graphqlsample.utils.manager
 
 import android.content.Intent
 import javax.inject.Inject
