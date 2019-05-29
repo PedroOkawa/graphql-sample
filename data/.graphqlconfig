@@ -1,0 +1,16 @@
+{
+  "name": "GraphQL Sample Schema",
+  "schemaPath": "data/schema.graphql",
+  "extensions": {
+    "endpoints": {
+      "GraphQL Sample Endpoint": {
+        "url": "https://api.github.com/graphql",
+        "headers": {
+          "user-agent": "JS GraphQL",
+          "authorization": "Bearer e83f5876157de88fc6653647ee45328968981152"
+        },
+        "introspect": false
+      }
+    }
+  }
+}

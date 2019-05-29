@@ -2,11 +2,19 @@ apply from: '../libraries.gradle'
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(path: ':data')
+    api project(path: ':domain')
 
-    implementation libraries.kotlin.values()
+    api androidx.values()
+    api daggerImplementation
+    api kotlin.values()
+    api navigation.values()
 
-    api libraries.google.values()
+    implementation apollo.values()
+    implementation okHttp.values()
 
-    testImplementation libraries.unitTests.values()
-    androidTestImplementation libraries.instrumentedTests.values()
+    kapt daggerAnnotationProcessor
+
+    testImplementation unitTests.values()
+    androidTestImplementation instrumentedTests.values()
 }

@@ -1,29 +1,28 @@
-query FeedQuery($type: FeedType!, $limit: Int!) {
-  feed(type: $type, limit: $limit) {
-    comments {
-      ...FeedCommentFragment
+query SearchQuery($query: String!, $type: SearchType = REPOSITORY, $first: Int!, $after: String) {
+    search(query: $query, type: $type, first: $first, after: $after) {
+        pageInfo {
+            ...PageInfoFragment
+        },
+        nodes {
+            ...RepositoryFragment
+        }
     }
-    repository {
-      ...RepositoryFragment
-    }
-    postedBy {
-      login
-    }
-  }
+}
+
+fragment PageInfoFragment on PageInfo {
+    endCursor,
+    hasNextPage
 }
 
 fragment RepositoryFragment on Repository {
-  name
-  full_name
-  owner {
-    login
-  }
+    nameWithOwner,
+    description,
+    owner {
+        ...OwnerFragment
+    }
 }
 
-fragment FeedCommentFragment on Comment {
-  id
-  postedBy {
+fragment OwnerFragment on RepositoryOwner {
+    avatarUrl,
     login
-  }
-  content
 }

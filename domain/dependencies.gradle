@@ -1,0 +1,13 @@
+apply from: '../libraries.gradle'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation daggerImplementation
+    implementation kotlin.values()
+    implementation rxJava
+    implementation rxKotlin
+
+    kapt daggerAnnotationProcessor
+
+    testImplementation unitTests.values()
+}

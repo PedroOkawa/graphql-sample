@@ -2,15 +2,16 @@ apply from: '../libraries.gradle'
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':domain')
 
-    implementation libraries.apollo.values()
-    implementation libraries.kotlin.values()
+    implementation apollo.values()
+    implementation daggerImplementation
+    implementation kotlin.values()
 
-    compileOnly libraries.jetBrains.values()
-    testCompileOnly libraries.jetBrains.values()
+    kapt daggerAnnotationProcessor
 
-    api libraries.google.values()
+    compileOnly jetBrains.values()
+    testCompileOnly jetBrains.values()
 
-    testImplementation libraries.unitTests.values()
-    androidTestImplementation libraries.instrumentedTests.values()
+    testImplementation unitTests.values()
 }

@@ -1,36 +1,65 @@
 apply from: '../versions.gradle'
 
-ext.libraries = [
+ext {
 
         /* APP */
 
-        apollo: [
-                apolloRuntime:          "com.apollographql.apollo:apollo-runtime:$versions.apolloGraphQlVersion",
-                apolloAndroidSupport:   "com.apollographql.apollo:apollo-android-support:$versions.apolloGraphQlVersion"
-        ],
+        androidx = [
+                appCompat               : "androidx.appcompat:appcompat:$versions.appCompatVersion",
+                kotlinExtensions        : "androidx.core:core-ktx:$versions.kotlinExtensionsVersion",
+                constraintLayout        : "androidx.constraintlayout:constraintlayout:$versions.constraintLayoutVersion"
+        ]
 
-        google: [
-                appCompat:              "androidx.appcompat:appcompat:$versions.appCompatVersion",
-                kotlinExtensions:       "androidx.core:core-ktx:$versions.kotlinExtensionsVersion"
-        ],
+        apollo = [
+                apolloRuntime           : "com.apollographql.apollo:apollo-runtime:$versions.apolloGraphQlVersion",
+                apolloAndroidSupport    : "com.apollographql.apollo:apollo-android-support:$versions.apolloGraphQlVersion",
+                apolloRXSupport         : "com.apollographql.apollo:apollo-rx2-support:$versions.apolloGraphQlVersion"
+        ]
 
-        jetBrains: [
-                annotations:            "org.jetbrains:annotations:$versions.jetBrainsAnnotations"
-        ],
+        dagger = [
+                implementation: [
+                        core            : "com.google.dagger:dagger:$versions.daggerVersion",
+                        android         : "com.google.dagger:dagger-android:$versions.daggerVersion",
+                        androidSupport  : "com.google.dagger:dagger-android-support:$versions.daggerVersion"
+                ],
+                annotationProcessor: [
+                        compiler        : "com.google.dagger:dagger-compiler:$versions.daggerVersion",
+                        androidCompiler : "com.google.dagger:dagger-android-processor:$versions.daggerVersion"
+                ]
+        ]
+        daggerImplementation = dagger['implementation'].values()
+        daggerAnnotationProcessor = dagger['annotationProcessor'].values()
 
-        kotlin: [
-                core:                   "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$versions.kotlinVersion"
-        ],
+        jetBrains = [
+                annotations             : "org.jetbrains:annotations:$versions.jetBrainsAnnotationsVersion"
+        ]
+
+        kotlin = [
+                core                    : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$versions.kotlinVersion"
+        ]
+
+        navigation = [
+                navigationFragment      : "android.arch.navigation:navigation-fragment:$versions.navigationVersion",
+                navigationUi            : "android.arch.navigation:navigation-ui:$versions.navigationVersion"
+        ]
+
+        okHttp = [
+                core                    : "com.squareup.okhttp3:okhttp:$versions.okHttpVersion"
+        ]
+
+        rxJava = "io.reactivex.rxjava2:rxjava:$versions.rxJavaVersion"
+        rxKotlin = "io.reactivex.rxjava2:rxkotlin:$versions.rxKotlinVersion"
+        rxAndroid = "io.reactivex.rxjava2:rxandroid:$versions.rxAndroidVersion"
 
         /* TESTS */
 
-        instrumentedTests: [
-                espresso:               "androidx.test.espresso:espresso-core:$versions.espressoCoreVersion",
-                runner:                 "androidx.test:runner:$versions.androidTestRunnerVersion"
-        ],
-
-        unitTests: [
-                jUnit:                  "junit:junit:$versions.jUnitVersion"
+        instrumentedTests = [
+                espresso                : "androidx.test.espresso:espresso-core:$versions.espressoCoreVersion",
+                runner                  : "androidx.test:runner:$versions.androidTestRunnerVersion"
         ]
 
-]
+        unitTests = [
+                jUnit                   : "junit:junit:$versions.jUnitVersion"
+        ]
+
+}
