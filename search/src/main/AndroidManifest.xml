@@ -1,0 +1,30 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="me.okawa.graphqlsample.search">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <dist:module
+        dist:instant="false"
+        dist:onDemand="true"
+        dist:title="@string/title_search">
+        <dist:fusing dist:include="true" />
+    </dist:module>
+
+    <application
+        android:allowBackup="true"
+        android:name="me.okawa.graphqlsample.GraphQLSampleApp"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".feature.home.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

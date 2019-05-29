@@ -1,6 +1,0 @@
-apply from: '../libraries.gradle'
-
-dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation project(':app')
-}

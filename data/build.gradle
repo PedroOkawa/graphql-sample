@@ -6,3 +6,7 @@ apply from: 'dependencies.gradle'
 
 sourceCompatibility = "7"
 targetCompatibility = "7"
+
+apollo {
+    customTypeMapping = [ "URI": "java.net.URI" ]
+}

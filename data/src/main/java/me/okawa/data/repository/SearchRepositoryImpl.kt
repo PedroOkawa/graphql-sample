@@ -6,7 +6,7 @@ import com.apollographql.apollo.sample.SearchQuery
 import com.apollographql.apollo.sample.type.SearchType
 import io.reactivex.Observable
 import me.okawa.data.mapper.SearchMapper
-import me.okawa.domain.model.SearchData
+import me.okawa.domain.model.SearchEntity
 import me.okawa.domain.repository.SearchRepository
 import javax.inject.Inject
 
@@ -19,7 +19,7 @@ class SearchRepositoryImpl @Inject constructor(
         private val SEARCH_TYPE = SearchType.REPOSITORY
     }
 
-    override fun search(query: String, first: Int, after: String): Observable<SearchData> {
+    override fun search(query: String, first: Int, after: String?): Observable<SearchEntity> {
         val searchQuery = SearchQuery.builder()
             .type(SEARCH_TYPE)
             .query(query)

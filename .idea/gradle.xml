@@ -11,7 +11,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/data" />
             <option value="$PROJECT_DIR$/domain" />
-            <option value="$PROJECT_DIR$/home" />
+            <option value="$PROJECT_DIR$/search" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

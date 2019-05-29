@@ -2,16 +2,17 @@ apply from: '../libraries.gradle'
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation project(path: ':data')
+    api project(path: ':data')
     api project(path: ':domain')
 
+    api apollo.values()
     api androidx.values()
     api daggerImplementation
     api kotlin.values()
     api navigation.values()
+    api okHttp.values()
 
-    implementation apollo.values()
-    implementation okHttp.values()
+    implementation rxAndroid
 
     kapt daggerAnnotationProcessor
 

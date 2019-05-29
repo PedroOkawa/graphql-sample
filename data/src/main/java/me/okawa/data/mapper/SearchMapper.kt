@@ -1,14 +1,14 @@
 package me.okawa.data.mapper
 
 import com.apollographql.apollo.sample.SearchQuery
-import me.okawa.domain.model.SearchData
+import me.okawa.domain.model.SearchEntity
 import javax.inject.Inject
 
 class SearchMapper @Inject constructor(
     private val repositoryMapper: RepositoryMapper
 ) {
 
-    fun map(searchQueryData: SearchQuery.Data?): SearchData? {
+    fun map(searchQueryData: SearchQuery.Data?): SearchEntity? {
         searchQueryData ?: return null
 
         val search = searchQueryData.search()
@@ -17,7 +17,7 @@ class SearchMapper @Inject constructor(
         val endCursor = pageInfoFragment.endCursor()
         val repositoryDataList = repositoryMapper.map(search.nodes())
 
-        return SearchData(hasNextPage, endCursor, repositoryDataList)
+        return SearchEntity(hasNextPage, endCursor, repositoryDataList)
     }
 
 }

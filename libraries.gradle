@@ -7,7 +7,8 @@ ext {
         androidx = [
                 appCompat               : "androidx.appcompat:appcompat:$versions.appCompatVersion",
                 kotlinExtensions        : "androidx.core:core-ktx:$versions.kotlinExtensionsVersion",
-                constraintLayout        : "androidx.constraintlayout:constraintlayout:$versions.constraintLayoutVersion"
+                constraintLayout        : "androidx.constraintlayout:constraintlayout:$versions.constraintLayoutVersion",
+                lifecycleExtensions     : "androidx.lifecycle:lifecycle-extensions:$versions.lifecycleExtensionsVersion"
         ]
 
         apollo = [
